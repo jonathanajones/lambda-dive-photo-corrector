@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "lambda-dive-photo-corrector"
+version = "0.1.0"
+description = ""
+authors = ["Jonathan Jones <jonathanajones@gmail.com>"]
+packages = [{include = "lambda-dive-photo-corrector"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.8.2"
+aws-lambda-typing = "^2.20.0"
+requests = "^2.32.3"
+boto3 = "^1.28.31"
+pillow = "^10.4.0"
+pyright = "^1.1.379"
+pylint = "^3.2.7"
+numpy = "^2.1.1"
+opencv-python = "^4.10.0.84"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-mock = "^3.11.1"
+black = "^23.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
